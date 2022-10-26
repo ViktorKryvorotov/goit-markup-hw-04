@@ -114,7 +114,7 @@ margin-left: 50px;
     color: var(--akcent-color);
 }
 .contacts-icon{
-    fill: var(--secondary-color);
+    fill: currentColor;
     margin-right: 10px;
 }
 
