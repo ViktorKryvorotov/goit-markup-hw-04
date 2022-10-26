@@ -14,7 +14,8 @@
     --hero-footer-background:#2F303A;
     --background-team:#F5F4FA;
     --button-hover:#188CE8;
-    --footer-contact-color:rgba(255, 255, 255, 0.6)
+    --footer-contact-color:rgba(255, 255, 255, 0.6);
+    --icon-color: #AFB1B8;
 
 }
 body{
@@ -99,7 +100,8 @@ img {
 margin-left: 50px;
 }
 .contacts-header {
-    display: block;
+    align-items: center;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -108,9 +110,14 @@ margin-left: 50px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.contacts-header:hover,.contacts-header:focus {
+.contacts-header:hover,.contacts-header:focus{
     color: var(--akcent-color);
 }
+.contacts-icon{
+    fill: var(--secondary-color);
+    margin-right: 10px;
+}
+
 /*Герой*/
 .hero{
     
@@ -162,7 +169,7 @@ margin-left: 50px;
     background-color: var(--button-hover)
 }
 /*Наші переваги*/
-.thumb{
+.features-icons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,9 +177,6 @@ margin-left: 50px;
     height: 120px;
     padding: 24px 100px;
     margin-bottom: 30px;
-
-}
-.features-picture{
 
 }
 .section{
@@ -245,7 +249,6 @@ flex-basis: calc((100% - 60px) / 3);
 }
 /*Команда*/
 .team{
- 
     background-color:var(--background-team);
 }
 .personnel{
@@ -283,9 +286,62 @@ flex-basis: calc((100% - 90px) / 4);
     letter-spacing: 0.03em;
 }
 .list-back{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
-}
 
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+.social-icons{
+    fill: var(--icon-color);
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+}
+.social-icons:hover{
+    fill: var(--white-color);
+    background-color: var(--akcent-color);
+}
+/*Постійні клієнти*/
+.customers-icon:hover,.customers-icon:focus{
+   border-color: var(--akcent-color);
+   fill: var(--akcent-color);
+
+}
+.customers-icon{
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: var(--icon-color);
+}
+.customers-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.customers-title{
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em
+}
 /*Футер*/
 .footer{
     padding-bottom: 60px;
